@@ -3,9 +3,10 @@ import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 
 const Cube = () => {
-  const mountRef = useRef(null);
+  const mountRef = useRef<HTMLDivElement>(null); // Explicitly typing the ref
 
   useEffect(() => {
+    if (!mountRef.current) return; // Ensures the ref is linked to a DOM element
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -35,6 +36,8 @@ const Cube = () => {
 
     // Cleanup function
     return () => {
+      if (!mountRef.current) return; // Ensures the ref is linked to a DOM element
+
       mountRef.current.removeChild(renderer.domElement);
       scene.remove(cube);
       geometry.dispose();

@@ -1,7 +1,7 @@
-import Image from "next/image";
+// import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const CubeWithNoSSR = dynamic(() => import("./components/Cube"), {
+const CubeWithNoSSR = dynamic(() => import("./components/cube"), {
   ssr: false,
 });
 
