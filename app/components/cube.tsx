@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const Cube = () => {
   const mountRef = useRef<HTMLDivElement>(null); // Explicitly typing the ref
@@ -18,17 +19,45 @@ const Cube = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.current.appendChild(renderer.domElement);
 
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
+    // Lighting
+    const light = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
+    scene.add(light);
+
+    // Loader
+    const loader = new GLTFLoader();
+    let loadedMesh: THREE.Group<THREE.Object3DEventMap> | null = null;
+    loader.load(
+      "/your-model-file.glb", // Path to your GLTF or GLB file
+      (gltf) => {
+        loadedMesh = gltf.scene; // Assign the loaded model to loadedMesh
+        scene.add(gltf.scene);
+        animate();
+      },
+      undefined,
+      (error) => {
+        console.error("An error happened:", error);
+      }
+    );
+
+    // const geometry = new THREE.BoxGeometry();
+    // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    // const cube = new THREE.Mesh(geometry, material);
+    // scene.add(cube);
 
     camera.position.z = 5;
 
-    const animate = function () {
+    // const animate = function () {
+    //   requestAnimationFrame(animate);
+    //   cube.rotation.x += 0.01;
+    //   cube.rotation.y += 0.01;
+    //   renderer.render(scene, camera);
+    // };
+
+    const animate = () => {
       requestAnimationFrame(animate);
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
+      if (loadedMesh) {
+        loadedMesh.rotation.y += 0.01; // Rotate the model
+      }
       renderer.render(scene, camera);
     };
 
@@ -39,9 +68,8 @@ const Cube = () => {
       if (!mountRef.current) return; // Ensures the ref is linked to a DOM element
 
       mountRef.current.removeChild(renderer.domElement);
-      scene.remove(cube);
-      geometry.dispose();
-      material.dispose();
+      scene.remove();
+      renderer.dispose();
     };
   }, []);
 
