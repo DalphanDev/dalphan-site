@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.header {
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    #06c6dd 9.24%,
+    #0368be 44.39%,
+    #0146a6 69.63%,
+    rgba(5, 5, 25, 0) 100%
+  );
+  border-image-slice: 1;
+}
