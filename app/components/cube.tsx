@@ -1,7 +1,8 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 const Cube = () => {
   const mountRef = useRef<HTMLDivElement>(null); // Explicitly typing the ref
@@ -20,18 +21,58 @@ const Cube = () => {
     mountRef.current.appendChild(renderer.domElement);
 
     // Lighting
-    const light = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
-    scene.add(light);
+    const hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 2);
+    hemiLight.color.setHSL(0.6, 1, 0.6);
+    hemiLight.groundColor.setHSL(0.095, 1, 0.75);
+    hemiLight.position.set(0, 50, 0);
+    scene.add(hemiLight);
+
+    const hemiLightHelper = new THREE.HemisphereLightHelper(hemiLight, 10);
+    scene.add(hemiLightHelper);
+
+    //
+
+    const dirLight = new THREE.DirectionalLight(0xffffff, 3);
+    dirLight.color.setHSL(0.1, 1, 0.95);
+    dirLight.position.set(-1, 1.75, 1);
+    dirLight.position.multiplyScalar(30);
+    scene.add(dirLight);
+
+    dirLight.castShadow = true;
+
+    dirLight.shadow.mapSize.width = 2048;
+    dirLight.shadow.mapSize.height = 2048;
+
+    const d = 50;
+
+    dirLight.shadow.camera.left = -d;
+    dirLight.shadow.camera.right = d;
+    dirLight.shadow.camera.top = d;
+    dirLight.shadow.camera.bottom = -d;
+
+    dirLight.shadow.camera.far = 3500;
+    dirLight.shadow.bias = -0.0001;
+
+    const dirLightHelper = new THREE.DirectionalLightHelper(dirLight, 10);
+    scene.add(dirLightHelper);
+
+    // Controls
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.target.set(0, 0.5, 0);
+    controls.update();
+    controls.enablePan = false;
+    controls.enableDamping = true;
 
     // Loader
     const loader = new GLTFLoader();
     let loadedMesh: THREE.Group<THREE.Object3DEventMap> | null = null;
     loader.load(
-      "/your-model-file.glb", // Path to your GLTF or GLB file
+      "/dalphan.glb", // Path to your GLTF or GLB file
       (gltf) => {
         loadedMesh = gltf.scene; // Assign the loaded model to loadedMesh
         scene.add(gltf.scene);
         animate();
+        gltf.animations; // Array<THREE.AnimationClip>
       },
       undefined,
       (error) => {
@@ -39,29 +80,12 @@ const Cube = () => {
       }
     );
 
-    // const geometry = new THREE.BoxGeometry();
-    // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    // const cube = new THREE.Mesh(geometry, material);
-    // scene.add(cube);
-
     camera.position.z = 5;
-
-    // const animate = function () {
-    //   requestAnimationFrame(animate);
-    //   cube.rotation.x += 0.01;
-    //   cube.rotation.y += 0.01;
-    //   renderer.render(scene, camera);
-    // };
 
     const animate = () => {
       requestAnimationFrame(animate);
-      if (loadedMesh) {
-        loadedMesh.rotation.y += 0.01; // Rotate the model
-      }
       renderer.render(scene, camera);
     };
-
-    animate();
 
     // Cleanup function
     return () => {
