@@ -53,9 +53,6 @@ const Cube = () => {
     dirLight.shadow.camera.far = 3500;
     dirLight.shadow.bias = -0.0001;
 
-    const dirLightHelper = new THREE.DirectionalLightHelper(dirLight, 10);
-    scene.add(dirLightHelper);
-
     // Controls
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.target.set(0, 0.5, 0);
