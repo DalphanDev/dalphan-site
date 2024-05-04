@@ -30,7 +30,7 @@ const Cube = () => {
     const hemiLightHelper = new THREE.HemisphereLightHelper(hemiLight, 10);
     scene.add(hemiLightHelper);
 
-    //
+    // Directional light
 
     const dirLight = new THREE.DirectionalLight(0xffffff, 3);
     dirLight.color.setHSL(0.1, 1, 0.95);
@@ -59,17 +59,21 @@ const Cube = () => {
     // Controls
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.target.set(0, 0.5, 0);
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 1.0;
     controls.update();
+    controls.enableZoom = false;
     controls.enablePan = false;
-    controls.enableDamping = true;
+    controls.enableRotate = false;
 
     // Loader
     const loader = new GLTFLoader();
-    let loadedMesh: THREE.Group<THREE.Object3DEventMap> | null = null;
+
     loader.load(
       "/dalphan.glb", // Path to your GLTF or GLB file
       (gltf) => {
-        loadedMesh = gltf.scene; // Assign the loaded model to loadedMesh
+        gltf.scene.rotateX(1.4);
+        gltf.scene.rotateZ(0);
         scene.add(gltf.scene);
         animate();
         gltf.animations; // Array<THREE.AnimationClip>
@@ -80,10 +84,13 @@ const Cube = () => {
       }
     );
 
-    camera.position.z = 5;
+    camera.position.x = 3;
+    camera.position.y = 0;
+    camera.position.z = 0;
 
     const animate = () => {
       requestAnimationFrame(animate);
+      controls.update();
       renderer.render(scene, camera);
     };
 
