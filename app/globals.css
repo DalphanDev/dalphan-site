@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./fonts.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,6 +18,7 @@
 }
 
 body {
+  font-family: "Biennale", sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
     89.98deg,
@@ -24,6 +26,7 @@ body {
     #050518 8.12%,
     #02020c 100.61%
   );
+  overflow-x: hidden;
 }
 
 @layer utilities {
