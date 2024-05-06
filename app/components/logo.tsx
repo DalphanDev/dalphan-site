@@ -4,7 +4,7 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-const Cube = () => {
+const Logo = () => {
   const mountRef = useRef<HTMLDivElement>(null); // Explicitly typing the ref
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Cube = () => {
       1000
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(84, 84);
     mountRef.current.appendChild(renderer.domElement);
 
     // Lighting
@@ -101,7 +101,7 @@ const Cube = () => {
     };
   }, []);
 
-  return <div ref={mountRef}></div>;
+  return <div className="logo" ref={mountRef}></div>;
 };
 
-export default Cube;
+export default Logo;

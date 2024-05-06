@@ -46,3 +46,8 @@ body {
   );
   border-image-slice: 1;
 }
+
+.logo {
+  width: 84px;
+  height: 84px;
+}
