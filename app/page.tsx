@@ -1,5 +1,4 @@
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import Navbar from "./components/navbar";
 import Link from "next/link";
 
@@ -31,16 +30,22 @@ export default function Home() {
             Interact with some of my projects below:
           </h2>
           <div className="flex flex-col justify-center items-center space-y-4">
-            <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
-              <Link href="/projects/dalphanaio">Dalphan AIO</Link>
-            </button>
+            <Link href="/projects/dalphanaio">
+              <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
+                Dalphan AIO
+              </button>
+            </Link>
             <div className="flex justify-between space-x-4">
-              <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
-                <Link href="/projects/turbo">Turbo</Link>
-              </button>
-              <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
-                <Link href="/projects/akamai">Akamai Sensor</Link>
-              </button>
+              <Link href="/projects/turbo">
+                <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
+                  Turbo
+                </button>
+              </Link>
+              <Link href="/projects/akamai">
+                <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
+                  Akamai Sensor
+                </button>
+              </Link>
             </div>
           </div>
         </div>

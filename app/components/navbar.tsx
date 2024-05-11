@@ -16,16 +16,16 @@ export default function Header() {
       </Link>
       <nav className="flex justify-center items-center w-full py-5">
         <ul className="flex space-x-10">
-          <li>
-            <Link href="/projects">
-              <p>Projects</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <p>Contact</p>
-            </Link>
-          </li>
+          <Link href="/projects">
+            <li>
+              <p className="font-bold text-lg">Projects</p>
+            </li>
+          </Link>
+          <Link href="/contact">
+            <li>
+              <p className="font-bold text-lg">Contact</p>
+            </li>
+          </Link>
         </ul>
       </nav>
     </header>
