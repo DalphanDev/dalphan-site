@@ -1,23 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "./logo";
+import Anim from "../../public/anim.gif";
 
 export default function Header() {
   return (
-    <header className="w-full relative header">
-      <div className="absolute left-4 top-2 transform ">
-        <Link href="/">
-          <Logo />
-          {/* <Image src={Logo} alt="logo" width={84} height={84} /> */}
-        </Link>
-      </div>
-      <nav className="flex justify-center items-center w-full py-10">
+    <header className="relative flex justify-center items-center w-full header py-5">
+      <Link href="/">
+        <Image
+          className="absolute top-2"
+          src={Anim}
+          alt="logo"
+          width={160}
+          height={160}
+        />
+      </Link>
+      <nav className="flex justify-center items-center w-full py-5">
         <ul className="flex space-x-10">
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/projects">
+              <p>Projects</p>
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">
+              <p>Contact</p>
+            </Link>
           </li>
         </ul>
       </nav>
