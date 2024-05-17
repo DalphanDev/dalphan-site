@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import Anim from "../../public/anim.gif";
+import GithubLogo from "../../public/github.png";
 
 export default function Header() {
   return (
     <header className="relative flex justify-center items-center w-full header py-5">
       <Link href="/">
         <Image
-          className="absolute top-2"
+          className="top-2"
           src={Anim}
           alt="logo"
           width={160}
@@ -28,6 +29,15 @@ export default function Header() {
           </Link>
         </ul>
       </nav>
+      <Link href="https://github.com/DalphanDev">
+        <Image
+          className="top-2 invert mr-8"
+          src={GithubLogo}
+          alt="github"
+          width={64}
+          height={64}
+        />
+      </Link>
     </header>
   );
 }
