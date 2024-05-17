@@ -13,6 +13,7 @@ export default function Header() {
           alt="logo"
           width={160}
           height={160}
+          unoptimized
         />
       </Link>
       <nav className="flex justify-center items-center w-full py-5">

@@ -8,17 +8,15 @@ export default function Contact() {
       <Navbar />
       <div className="flex flex-col justify-between items-center mt-8 space-y-8 w-full px-8">
         <h2 className="font-medium text-4xl">Turbo</h2>
-        <div className="flex justify-between items-center space-x-8 flex-grow">
-          <iframe
-            className="flex-grow"
-            src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7152803180223819776?compact=1"
-            height="500"
-            width="1200"
-            frameBorder="0"
-            allowFullScreen
-            title="Embedded post"
-          ></iframe>
-          <div className="flex-shrink">
+        <div className="flex justify-between space-x-8 flex-grow">
+          <div className="flex flex-col items-center grow min-w-80 space-y-8">
+            <h3 className="font-medium text-2xl">Send a Request</h3>
+            <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
+              Send
+            </button>
+            <p className="grow">Response Info Here</p>
+          </div>
+          <div className="shrink">
             <p className="font-medium text-xl mb-8">
               Turbo is a modern request library used for bypassing cybersecurity
               checks. By mimicking JA3 fingerprints, these requests can closer
