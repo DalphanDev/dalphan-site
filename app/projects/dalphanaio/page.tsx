@@ -23,7 +23,7 @@ export default function Contact() {
               Dalphan AIO is a bot software designed to streamline and optimize
               online purchases by automating the buying process across multiple
               platforms. Leveraging multiple programming languages, DalphanAIO
-              was created to meet modern industry standards.
+              was created to exceed modern industry standards.
             </p>
             <ul className="list-disc list-inside space-y-8 font-small text-lg">
               <li>

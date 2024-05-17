@@ -24,7 +24,7 @@ export default function Contact() {
               project demonstrates how one can de-obfuscate and reverse engineer
               a script.
             </p>
-            <ul className="list-disc list-inside space-y-8 font-small text-lg">
+            <ul className="list-disc list-inside space-y-8 font-small text-lg mb-8">
               <li>
                 Rebuilt the script in Go after gathering all the functions and
                 steps used in generating a &quot;sensor&quot; for Akamai&apos;s
@@ -40,6 +40,11 @@ export default function Contact() {
                 information on techniques Akamai employs to stop web scrapers.
               </li>
             </ul>
+            <Link href="https://github.com/DalphanDev/akamai-sensor">
+              <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
+                View Repository
+              </button>
+            </Link>
           </div>
         </div>
       </div>

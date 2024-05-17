@@ -22,7 +22,7 @@ export default function Contact() {
               checks. By mimicking JA3 fingerprints, these requests can closer
               disguise as other browsers such as Chrome and Firefox.
             </p>
-            <ul className="list-disc list-inside space-y-8 font-small text-lg">
+            <ul className="list-disc list-inside space-y-8 font-small text-lg mb-8">
               <li>
                 Turbo was able to bypass JA3 protections 100% of the time.
               </li>
@@ -40,6 +40,11 @@ export default function Contact() {
                 recreate them.
               </li>
             </ul>
+            <Link href="https://github.com/DalphanDev/Turbo">
+              <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
+                View Repository
+              </button>
+            </Link>
           </div>
         </div>
       </div>
