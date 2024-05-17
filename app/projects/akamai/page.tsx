@@ -23,14 +23,14 @@ export default function Contact() {
               Akamai Sensor generates realistic sensors that Akamai cannot
               differentiate between fake and real. Akamai sells anti-bot
               solutions to companies to ward off bots and web scrapers. This
-              project demonstrates how one can de- obfuscate and reverse
-              engineer a script.
+              project demonstrates how one can de-obfuscate and reverse engineer
+              a script.
             </p>
             <ul className="list-disc list-inside space-y-8 font-small text-lg">
               <li>
                 Rebuilt the script in Go after gathering all the functions and
-                steps used in generating a "sensor" for Akamai's anti-bot
-                service.
+                steps used in generating a &quot;sensor&quot; for Akamai&apos;s
+                anti-bot service.
               </li>
               <li>
                 Debugged and documented the code utilizing the Chrome DevTools

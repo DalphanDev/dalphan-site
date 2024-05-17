@@ -33,12 +33,13 @@ export default function Contact() {
                 Firefox, and Safari.
               </li>
               <li>
-                Forked off Go's net/http library to make modifications to allow
-                for JA3 editing on the individual requests.
+                Forked off Go&apos;s net/http library to make modifications to
+                allow for JA3 editing on the individual requests.
               </li>
               <li>
-                Researched salesforce's JA3 security and different browser's JA3
-                fingerprints to document how to appropriately recreate them.
+                Researched salesforce&apos;s JA3 security and different
+                browsers&apos; JA3 fingerprints to document how to appropriately
+                recreate them.
               </li>
             </ul>
           </div>
