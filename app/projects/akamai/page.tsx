@@ -10,7 +10,7 @@ export default function Contact() {
         <h2 className="font-medium text-4xl">Akamai Sensor</h2>
         <div className="flex justify-between items-center space-x-8 flex-grow">
           <Image
-            className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink"
+            className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink mb-8"
             src="/akamai.png"
             alt="logo"
             width={800}
