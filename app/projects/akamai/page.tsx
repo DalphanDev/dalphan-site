@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -9,13 +9,13 @@ export default function Contact() {
       <div className="flex flex-col justify-between items-center mt-8 space-y-8 w-full px-8">
         <h2 className="font-medium text-4xl">Akamai Sensor</h2>
         <div className="flex justify-between items-center space-x-8 flex-grow">
-          <div className="flex flex-col items-center grow min-w-80 space-y-8">
-            <h3 className="font-medium text-2xl">Generate a Sensor</h3>
-            <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
-              Generate
-            </button>
-            <p className="grow">Sensor Info Here</p>
-          </div>
+          <Image
+            className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink"
+            src="/akamai.png"
+            alt="logo"
+            width={800}
+            height={400}
+          />
           <div className="flex-shrink">
             <p className="font-medium text-xl mb-8">
               Akamai Sensor generates realistic sensors that Akamai cannot
