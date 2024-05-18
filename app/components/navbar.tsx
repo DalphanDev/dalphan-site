@@ -14,6 +14,9 @@ export default function Header() {
           width={160}
           height={160}
           unoptimized
+          placeholder="blur"
+          blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mNkePu/noEIwDiqkL4KARPrGDl/kLFLAAAAAElFTkSuQmCC"
+          priority
         />
       </Link>
       <nav className="flex justify-center items-center w-full py-5">
@@ -32,11 +35,10 @@ export default function Header() {
       </nav>
       <Link href="https://github.com/DalphanDev">
         <Image
-          className="top-2 invert mr-8"
+          className="top-2 invert mr-8 w-12"
           src={GithubLogo}
           alt="github"
-          width={64}
-          height={64}
+          placeholder="blur"
         />
       </Link>
     </header>

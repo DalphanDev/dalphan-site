@@ -15,6 +15,7 @@ export default function Contact() {
             alt="logo"
             width={1226}
             height={667}
+            priority
           />
           <div className="shrink">
             <p className="font-medium text-xl mb-8">

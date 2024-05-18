@@ -13,6 +13,7 @@ export default function Home() {
           alt="logo"
           width={1226}
           height={667}
+          priority
         />
         <div className="flex flex-col space-y-8 flex-grow">
           <h1 className="font-bold text-5xl">Hey, I&apos;m Dalphan</h1>
