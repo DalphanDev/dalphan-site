@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
+import TurboImg from "../../../public/turbo.png";
 
 export default function Contact() {
   return (
@@ -11,11 +12,12 @@ export default function Contact() {
         <div className="flex justify-between space-x-8 flex-grow">
           <Image
             className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink mb-8"
-            src="/turbo.png"
-            alt="logo"
+            src={TurboImg}
+            alt="turbo code"
             width={1226}
             height={667}
             priority
+            placeholder="blur"
           />
           <div className="shrink">
             <p className="font-medium text-xl mb-8">
