@@ -43,7 +43,10 @@ export default function Contact() {
                 information on techniques Akamai employs to stop web scrapers.
               </li>
             </ul>
-            <Link href="https://github.com/DalphanDev/akamai-sensor">
+            <Link
+              href="https://github.com/DalphanDev/akamai-sensor"
+              target="_blank"
+            >
               <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
                 View Repository
               </button>

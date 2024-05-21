@@ -43,7 +43,7 @@ export default function Contact() {
                 recreate them.
               </li>
             </ul>
-            <Link href="https://github.com/DalphanDev/Turbo">
+            <Link href="https://github.com/DalphanDev/Turbo" target="_blank">
               <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
                 View Repository
               </button>

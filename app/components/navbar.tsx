@@ -33,7 +33,7 @@ export default function Header() {
           </Link>
         </ul>
       </nav>
-      <Link href="https://github.com/DalphanDev">
+      <Link target="_blank" href="https://github.com/DalphanDev">
         <Image
           className="top-2 invert mr-8 w-12"
           src={GithubLogo}
