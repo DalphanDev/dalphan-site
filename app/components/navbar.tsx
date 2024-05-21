@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import Anim from "../../public/anim.gif";
 import GithubLogo from "../../public/github.png";
 
 export default function Header() {
   return (
     <header className="relative flex justify-center items-center w-full header py-5">
       <Link href="/">
-        <Image
+        {/* <Image
           className="top-2"
           src={Anim}
           alt="logo"
@@ -16,7 +15,19 @@ export default function Header() {
           unoptimized
           placeholder="blur"
           blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mNkePu/noEIwDiqkL4KARPrGDl/kLFLAAAAAElFTkSuQmCC"
-        />
+        /> */}
+        <video
+          width="80"
+          height="83"
+          preload="none"
+          loop
+          autoPlay
+          muted
+          className="rounded-full ml-8"
+        >
+          <source src="./squarebounce.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </Link>
       <nav className="flex justify-center items-center w-full py-5">
         <ul className="flex space-x-10">
