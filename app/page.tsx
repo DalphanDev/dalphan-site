@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
+import TaskPage from "../public/taskPage.png";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,14 +9,14 @@ export default function Home() {
       <Navbar />
       <div className="flex justify-between mt-8 space-x-8 w-full px-8">
         <Image
-          className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink"
-          src="/taskPage.png"
+          className="shadow-2xl shadow-[#06c6dd]/50 rounded-md shrink"
+          src={TaskPage}
+          width={1000}
+          height={540}
           alt="logo"
-          width={1226}
-          height={667}
           priority
         />
-        <div className="flex flex-col space-y-8 flex-grow">
+        <div className="flex flex-col space-y-8 flex-grow ">
           <h1 className="font-bold text-5xl">Hey, I&apos;m Dalphan</h1>
           <h2 className="font-medium text-xl">
             I&apos;m a Full Stack Web Developer specializing in:

@@ -11,21 +11,15 @@ export default function Header() {
           className="top-2"
           src={Anim}
           alt="logo"
-          width={160}
-          height={160}
+          width={142}
+          height={80}
           unoptimized
           placeholder="blur"
           blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mNkePu/noEIwDiqkL4KARPrGDl/kLFLAAAAAElFTkSuQmCC"
-          priority
         />
       </Link>
       <nav className="flex justify-center items-center w-full py-5">
         <ul className="flex space-x-10">
-          {/* <Link href="/projects">
-            <li>
-              <p className="font-bold text-lg">Projects</p>
-            </li>
-          </Link> */}
           <Link href="/contact">
             <li>
               <p className="font-bold text-2xl">Contact</p>
@@ -37,6 +31,8 @@ export default function Header() {
         <Image
           className="top-2 invert mr-8 w-12"
           src={GithubLogo}
+          width={48}
+          height={48}
           alt="github"
           placeholder="blur"
         />

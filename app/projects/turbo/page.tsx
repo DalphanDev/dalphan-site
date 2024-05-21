@@ -13,9 +13,9 @@ export default function Contact() {
           <Image
             className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink mb-8"
             src={TurboImg}
+            width={850}
+            height={1084}
             alt="turbo code"
-            width={1226}
-            height={667}
             priority
             placeholder="blur"
           />
