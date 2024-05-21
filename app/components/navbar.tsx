@@ -21,14 +21,14 @@ export default function Header() {
       </Link>
       <nav className="flex justify-center items-center w-full py-5">
         <ul className="flex space-x-10">
-          <Link href="/projects">
+          {/* <Link href="/projects">
             <li>
               <p className="font-bold text-lg">Projects</p>
             </li>
-          </Link>
+          </Link> */}
           <Link href="/contact">
             <li>
-              <p className="font-bold text-lg">Contact</p>
+              <p className="font-bold text-2xl">Contact</p>
             </li>
           </Link>
         </ul>
