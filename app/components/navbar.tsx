@@ -6,16 +6,6 @@ export default function Header() {
   return (
     <header className="relative flex justify-center items-center w-full header py-5">
       <Link href="/">
-        {/* <Image
-          className="top-2"
-          src={Anim}
-          alt="logo"
-          width={142}
-          height={80}
-          unoptimized
-          placeholder="blur"
-          blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mNkePu/noEIwDiqkL4KARPrGDl/kLFLAAAAAElFTkSuQmCC"
-        /> */}
         <video
           width="80"
           height="83"
@@ -25,7 +15,7 @@ export default function Header() {
           muted
           className="rounded-full ml-8"
         >
-          <source src="./squarebounce.mp4" type="video/mp4" />
+          <source src="./bounce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </Link>
