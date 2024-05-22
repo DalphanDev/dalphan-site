@@ -26,10 +26,7 @@ export default function Contact() {
               was created to exceed modern industry standards.
             </p>
             <ul className="list-disc list-inside space-y-8 font-small text-lg mb-8">
-              <li>
-                DalphanAIO was able to reduce checkout times by up to 1,000% on
-                some sites.
-              </li>
+              <li>DalphanAIO was able to reduce checkout times by up 75%.</li>
               <li>
                 Designed and implemented intuitive user interfaces for the bot,
                 utilizing Electron, React, Redux and Figma for frontend design.
