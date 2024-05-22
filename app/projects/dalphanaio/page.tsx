@@ -25,7 +25,7 @@ export default function Contact() {
               platforms. Leveraging multiple programming languages, DalphanAIO
               was created to exceed modern industry standards.
             </p>
-            <ul className="list-disc list-inside space-y-8 font-small text-lg">
+            <ul className="list-disc list-inside space-y-8 font-small text-lg mb-8">
               <li>
                 DalphanAIO was able to reduce checkout times by up to 1,000% on
                 some sites.
@@ -45,6 +45,14 @@ export default function Contact() {
                 ensuring compatibility and functionality.
               </li>
             </ul>
+            <Link
+              href="https://github.com/DalphanDev/DalphanAIO-Showcase"
+              target="_blank"
+            >
+              <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
+                View Repository
+              </button>
+            </Link>
           </div>
         </div>
       </div>
