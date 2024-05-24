@@ -7,8 +7,8 @@ export default function Contact() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
-      <div className="flex justify-between w-full space-x-16 px-8 mt-8">
-        <div className="flex flex-col justify-start items-start space-y-16 w-full grow">
+      <div className="flex sm:flex-col 2xl:flex-row sm:items-center 2xl:items-start justify-between w-full  px-8 my-8">
+        <div className="flex flex-col justify-start items-start space-y-16 w-full grow mb-8 mr-8">
           <h1 className="font-bold text-5xl">Contact Me</h1>
           <h2 className="font-medium text-3xl">Email: tjallred02@gmail.com</h2>
           <h2 className="font-medium text-3xl">Phone: 954-268-4555</h2>

@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
-      <div className="flex justify-between mt-8 space-x-8 w-full px-8">
+      <div className="flex sm:flex-col 2xl:flex-row sm:items-center 2xl:items-start justify-between my-8 space-x-8 w-full px-8">
         <Image
-          className="shadow-2xl shadow-[#06c6dd]/50 rounded-md shrink"
+          className="shadow-2xl shadow-[#06c6dd]/50 rounded-md shrink mb-8"
           src={TaskPage}
           width={1000}
           height={540}

@@ -6,14 +6,14 @@ export default function Contact() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
-      <div className="flex flex-col justify-between items-center mt-8 space-y-8 w-full px-8">
+      <div className="flex flex-col justify-between items-center my-8 space-y-8 w-full grow px-8">
         <h2 className="font-medium text-4xl">Dalphan AIO</h2>
-        <div className="flex justify-between items-center space-x-8 flex-grow">
+        <div className="flex sm:flex-col 2xl:flex-row sm:items-center 2xl:items-start justify-between space-x-8 flex-grow">
           <iframe
-            className="flex-grow"
+            className="flex-grow mb-8 sm:w-full sm:h-40 2xl:w-1/2 2xl:h-40"
             src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7152803180223819776?compact=1"
-            height="500"
-            width="1200"
+            // height="500"
+            // width="1200"
             frameBorder="0"
             allowFullScreen
             title="Embedded post"
