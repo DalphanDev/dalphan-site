@@ -10,7 +10,7 @@ export default function Contact() {
         <h2 className="font-medium text-4xl">Dalphan AIO</h2>
         <div className="flex sm:flex-col 2xl:flex-row sm:items-center 2xl:items-start justify-between space-x-8 flex-grow">
           <iframe
-            className="flex-grow mb-8 sm:w-full sm:h-40 2xl:w-1/2 2xl:h-40"
+            className="flex-grow mb-8 sm:w-full 2xl:w-1/2 h-80"
             src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7152803180223819776?compact=1"
             // height="500"
             // width="1200"
