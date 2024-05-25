@@ -44,7 +44,7 @@ export default function Contact() {
               </li>
             </ul>
             <Link href="https://github.com/DalphanDev/Turbo" target="_blank">
-              <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50">
+              <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50 transform transition hover:scale-110 outline outline-2 outline-sky-400">
                 View Repository
               </button>
             </Link>

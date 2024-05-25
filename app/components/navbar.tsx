@@ -22,7 +22,7 @@ export default function Header() {
       <nav className="flex justify-center items-center w-full py-5">
         <ul className="flex space-x-10">
           <Link href="/contact">
-            <li>
+            <li className="hover:scale-110 transform transition">
               <p className="font-bold text-2xl">Contact</p>
             </li>
           </Link>
@@ -30,7 +30,7 @@ export default function Header() {
       </nav>
       <Link target="_blank" href="https://github.com/DalphanDev">
         <Image
-          className="top-2 invert mr-8 w-12"
+          className="top-2 invert mr-8 w-12 transform transition hover:scale-110 "
           src={GithubLogo}
           width={48}
           height={48}
