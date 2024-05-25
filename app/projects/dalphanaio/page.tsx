@@ -33,7 +33,7 @@ export default function Contact() {
               </li>
               <li>
                 Implemented advanced algorithms that increased the checkout
-                success rate to 80% during limited-• edition releases.
+                success rate to 80% during limited-edition releases.
               </li>
               <li>
                 Optimized the system architecture to support scaling from 10 to
