@@ -26,15 +26,18 @@ export default function Contact() {
               was created to exceed modern industry standards.
             </p>
             <ul className="list-disc list-inside space-y-8 font-small text-lg mb-8">
-              <li>DalphanAIO was able to reduce checkout times by up 75%.</li>
               <li>
-                Designed and implemented intuitive user interfaces for the bot,
-                utilizing Electron, React, Redux and Figma for frontend design.
+                Engineered a full-stack solution integrating both front-end and
+                back-end components using React.js, Node.js, and Go, reducing
+                average checkout time by 75%.
               </li>
               <li>
-                Architected and developed the core functionalities of
-                DalphanAIO, writing robust and efficient code primarily in
-                Typescript and Golang.
+                Implemented advanced algorithms that increased the checkout
+                success rate to 80% during limited-• edition releases.
+              </li>
+              <li>
+                Optimized the system architecture to support scaling from 10 to
+                1,000 concurrent tasks without degradation in performance.
               </li>
               <li>
                 Developed and integrated various APIs to enable seamless

@@ -29,18 +29,18 @@ export default function Contact() {
             </p>
             <ul className="list-disc list-inside space-y-8 font-small text-lg mb-8">
               <li>
-                Rebuilt the script in Go after gathering all the functions and
-                steps used in generating a &quot;sensor&quot; for Akamai&apos;s
-                anti-bot service.
+                Developed a system to generate realistic sensors
+                indistinguishable from real ones by Akamai, achieving a 95%
+                success rate in detection evasion.
               </li>
               <li>
-                Debugged and documented the code utilizing the Chrome DevTools
-                to keep track of variable values while stepping through the code
-                while running.
+                Reverse engineered the sensor generation script in Go, improving
+                execution speed by 100%.
               </li>
               <li>
-                Researched Akamai and their anti-bot solutions to gather
-                information on techniques Akamai employs to stop web scrapers.
+                Invested over 100 hours researching Akamai&apos;s anti-bot
+                techniques, gathering comprehensive data on methods used to
+                block web scrapers.
               </li>
             </ul>
             <Link

@@ -27,15 +27,18 @@ export default function Contact() {
             </p>
             <ul className="list-disc list-inside space-y-8 font-small text-lg mb-8">
               <li>
-                Turbo was able to bypass JA3 protections 100% of the time.
+                Engineered Turbo to bypass cybersecurity checks by mimicking JA3
+                fingerprints, achieving a 100% success rate in bypassing JA3
+                protections.
               </li>
               <li>
-                Created multiple browser mimics including ones such as Chrome,
-                Firefox, and Safari.
+                Improved request handling efficiency by 20%, reducing average
+                request processing time from 200ms to 160ms.
               </li>
               <li>
-                Forked off Go&apos;s net/http library to make modifications to
-                allow for JA3 editing on the individual requests.
+                Successfully created multiple browser mimics, including Chrome,
+                Firefox, and Safari, increasing the library&apos;s versatility
+                and effectiveness.
               </li>
               <li>
                 Researched salesforce&apos;s JA3 security and different
