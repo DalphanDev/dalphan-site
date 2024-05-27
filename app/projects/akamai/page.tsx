@@ -1,7 +1,32 @@
+import type { Metadata } from "next";
+import Head from "next/head";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
 import Image from "next/image";
 import AkamaiImg from "../../../public/akamai.png";
+
+export const metadata: Metadata = {
+  title: "Akamai Sensor \u2014 Dalphan | Thomas Allred",
+  description: "Explore the Akamai Sensor project by Dalphan (Thomas Allred).",
+  generator: "Next.js",
+  applicationName: "Dalphan | Thomas Allred",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "Dalphan",
+    "Thomas Allred",
+    "Developer",
+    "Freelance",
+    "Hire",
+    "Akamai",
+    "JavaScript",
+    "Go",
+    "Project",
+    "Anti-Bot",
+  ],
+  authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
+  creator: "Dalphan | Thomas Allred",
+  publisher: "Dalphan | Thomas Allred",
+};
 
 export default function Contact() {
   return (

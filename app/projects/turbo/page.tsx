@@ -1,7 +1,32 @@
+import type { Metadata } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
 import TurboImg from "../../../public/turbo.png";
+
+export const metadata: Metadata = {
+  title: "Turbo \u2014 Dalphan | Thomas Allred",
+  description: "Explore the Turbo project by Dalphan (Thomas Allred).",
+  generator: "Next.js",
+  applicationName: "Dalphan | Thomas Allred",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "Dalphan",
+    "Thomas Allred",
+    "Developer",
+    "Freelance",
+    "Hire",
+    "Turbo",
+    "Go",
+    "Project",
+    "Anti-Bot",
+    "Cybersecurity",
+  ],
+  authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
+  creator: "Dalphan | Thomas Allred",
+  publisher: "Dalphan | Thomas Allred",
+};
 
 export default function Contact() {
   return (

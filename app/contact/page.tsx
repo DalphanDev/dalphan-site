@@ -1,7 +1,37 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import Head from "next/head";
 import Navbar from "../components/navbar";
 import Link from "next/link";
 import CencImg from "../../public/cenc.jpg";
+
+export const metadata: Metadata = {
+  title: "Contact Me \u2014 Dalphan | Thomas Allred",
+  description: "Contact Dalphan (Thomas Allred) for your next project.",
+  generator: "Next.js",
+  applicationName: "Dalphan | Thomas Allred",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "Dalphan",
+    "Developer",
+    "Freelance",
+    "Hire",
+    "Thomas Allred",
+    "Contact",
+    "DalphanDev",
+    "React",
+    "Node",
+    "Go",
+  ],
+  authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
+  creator: "Dalphan | Thomas Allred",
+  publisher: "Dalphan | Thomas Allred",
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
+};
 
 export default function Contact() {
   return (

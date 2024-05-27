@@ -1,6 +1,30 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Head from "next/head";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Dalphan AIO \u2014 Dalphan | Thomas Allred",
+  description: "Explore the Dalphan AIO project by Dalphan (Thomas Allred).",
+  generator: "Next.js",
+  applicationName: "Dalphan | Thomas Allred",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "Dalphan",
+    "Thomas Allred",
+    "Developer",
+    "Freelance",
+    "Hire",
+    "DalphanAIO",
+    "React",
+    "Node",
+    "Go",
+    "Project",
+  ],
+  authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
+  creator: "Dalphan | Thomas Allred",
+  publisher: "Dalphan | Thomas Allred",
+};
 
 export default function Contact() {
   return (

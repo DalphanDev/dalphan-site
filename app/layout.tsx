@@ -4,20 +4,26 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dalphan",
-  description: "Hire the best developer for your next project.",
+  title: "Homepage \u2014 Dalphan | Thomas Allred",
+  description: "Hire Dalphan (Thomas Allred) for your next project.",
   generator: "Next.js",
-  applicationName: "Dalphan",
+  applicationName: "Dalphan | Thomas Allred",
   referrer: "origin-when-cross-origin",
-  keywords: ["Dalphan", "Developer", "Projects", "Hire"],
-  authors: [{ name: "Thomas Allred" }],
-  creator: "Thomas Allred",
-  publisher: "Thomas Allred",
-  formatDetection: {
-    telephone: true,
-    email: true,
-    address: true,
-  },
+  keywords: [
+    "Dalphan",
+    "Thomas Allred",
+    "Developer",
+    "Freelance",
+    "Hire",
+    "Full-Stack",
+    "Front-End",
+    "Back-End",
+    "React",
+    "Node",
+  ],
+  authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
+  creator: "Dalphan | Thomas Allred",
+  publisher: "Dalphan | Thomas Allred",
 };
 
 export default function RootLayout({
