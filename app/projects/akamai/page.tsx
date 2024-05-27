@@ -9,7 +9,7 @@ export default function Contact() {
       <Navbar />
       <div className="flex flex-col justify-between items-center my-8 space-y-8 w-full px-8">
         <h2 className="font-medium text-4xl">Akamai Sensor</h2>
-        <div className="flex sm:flex-col 2xl:flex-row sm:items-center 2xl:items-start justify-between items-start space-x-8 flex-grow">
+        <div className="flex flex-col items-center 2xl:flex-row 2xl:items-start justify-between space-x-8 flex-grow">
           <Image
             className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink mb-8"
             src={AkamaiImg}

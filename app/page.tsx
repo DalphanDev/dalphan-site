@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
-      <div className="flex sm:flex-col 2xl:flex-row sm:items-center 2xl:items-start justify-between my-8 space-x-8 w-full px-8">
+      <div className="flex flex-col items-center 2xl:flex-row 2xl:items-start justify-between my-8 space-x-8 w-full px-8">
         <Image
           className="shadow-2xl shadow-[#06c6dd]/50 rounded-md shrink mb-8"
           src={TaskPage}
@@ -16,7 +16,7 @@ export default function Home() {
           alt="logo"
           priority
         />
-        <div className="flex flex-col space-y-8 flex-grow ">
+        <div className="flex flex-col space-y-8 flex-grow">
           <h1 className="font-bold text-5xl">Hey, I&apos;m Dalphan</h1>
           <h2 className="font-medium text-xl">
             I&apos;m a Full Stack Web Developer specializing in:

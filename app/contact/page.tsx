@@ -7,29 +7,27 @@ export default function Contact() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
-      <div className="flex sm:flex-col 2xl:flex-row sm:items-center 2xl:items-start justify-between w-full  px-8 my-8">
+      <div className="flex flex-col items-center 2xl:flex-row 2xl:items-start justify-between w-full px-8 my-8">
         <div className="flex flex-col justify-start items-start space-y-16 w-full grow mb-8 mr-8">
           <h1 className="font-bold text-5xl">Contact Me</h1>
           <h2 className="font-medium text-3xl">Email: tjallred02@gmail.com</h2>
           <h2 className="font-medium text-3xl">Phone: 954-268-4555</h2>
           <h2 className="font-medium text-3xl">
-            LinkedIn:
             <Link
               target="_blank"
               href="https://www.linkedin.com/in/thomas-allred-dev/"
-              className="ml-2 text-blue-400"
+              className=" text-blue-400"
             >
-              https://www.linkedin.com/in/thomas-allred-dev/
+              LinkedIn
             </Link>
           </h2>
           <h2 className="font-medium text-3xl">
-            GitHub:
             <Link
               target="_blank"
               href="https://github.com/DalphanDev"
-              className="ml-2 text-blue-400"
+              className=" text-blue-400"
             >
-              https://github.com/DalphanDev
+              GitHub
             </Link>
           </h2>
           <h2 className="font-medium text-3xl">Discord: dalphan</h2>
