@@ -66,16 +66,7 @@ export default function Contact() {
           alt="cenc picture"
           width={1200}
           height={800}
-          shadowColor="#FFFFFF"
         />
-        {/* <Image
-          className="shadow-2xl shadow-black/50 rounded-xl"
-          src={CencImg}
-          alt="cenc picture"
-          width={1200}
-          priority
-          placeholder="blur"
-        /> */}
       </div>
     </main>
   );
