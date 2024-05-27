@@ -1,20 +1,18 @@
-import Image from "next/image";
 import Navbar from "./components/navbar";
 import TaskPage from "../public/taskPage.png";
 import Link from "next/link";
+import PrettyImage from "./components/prettyImage";
 
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
       <div className="flex flex-col items-center 2xl:flex-row 2xl:items-start justify-between my-8 space-x-8 w-full px-8">
-        <Image
-          className="shadow-2xl shadow-[#06c6dd]/50 rounded-md shrink mb-8"
+        <PrettyImage
           src={TaskPage}
+          alt="Dalphan AIO"
           width={1000}
           height={540}
-          alt="logo"
-          priority
         />
         <div className="flex flex-col space-y-8 flex-grow">
           <h1 className="font-bold text-5xl">Hey, I&apos;m Dalphan</h1>

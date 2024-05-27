@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
   creator: "Dalphan | Thomas Allred",
   publisher: "Dalphan | Thomas Allred",
+  // metadataBase: "https://dalphan-site.vercel.app" as URL,
   twitter: {
     card: "summary_large_image",
     title: "Dalphan | Thomas Allred",

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Head from "next/head";
+import PrettyImage from "../components/prettyImage";
 import Navbar from "../components/navbar";
 import Link from "next/link";
 import CencImg from "../../public/cenc.jpg";
@@ -13,10 +12,10 @@ export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   keywords: [
     "Dalphan",
+    "Thomas Allred",
     "Developer",
     "Freelance",
     "Hire",
-    "Thomas Allred",
     "Contact",
     "DalphanDev",
     "React",
@@ -62,14 +61,21 @@ export default function Contact() {
           </h2>
           <h2 className="font-medium text-3xl">Discord: dalphan</h2>
         </div>
-        <Image
+        <PrettyImage
+          src={CencImg}
+          alt="cenc picture"
+          width={1200}
+          height={800}
+          shadowColor="#FFFFFF"
+        />
+        {/* <Image
           className="shadow-2xl shadow-black/50 rounded-xl"
           src={CencImg}
           alt="cenc picture"
           width={1200}
           priority
           placeholder="blur"
-        />
+        /> */}
       </div>
     </main>
   );

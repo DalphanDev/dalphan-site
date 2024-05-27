@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Head from "next/head";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
-import Image from "next/image";
+import PrettyImage from "@/app/components/prettyImage";
 import AkamaiImg from "../../../public/akamai.png";
 
 export const metadata: Metadata = {
@@ -35,14 +34,11 @@ export default function Contact() {
       <div className="flex flex-col justify-between items-center my-8 space-y-8 w-full px-8">
         <h2 className="font-medium text-4xl">Akamai Sensor</h2>
         <div className="flex flex-col items-center 2xl:flex-row 2xl:items-start justify-between space-x-8 flex-grow">
-          <Image
-            className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink mb-8"
+          <PrettyImage
             src={AkamaiImg}
+            alt="akamai code"
             width={736}
             height={800}
-            alt="akamai code"
-            priority
-            placeholder="blur"
           />
           <div className="flex-shrink">
             <p className="font-medium text-xl mb-8">

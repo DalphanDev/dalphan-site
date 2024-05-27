@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Head from "next/head";
+import PrettyImage from "@/app/components/prettyImage";
 import Image from "next/image";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
@@ -35,7 +35,13 @@ export default function Contact() {
       <div className="flex flex-col justify-between items-center my-8 space-y-8 w-full px-8">
         <h2 className="font-medium text-4xl">Turbo</h2>
         <div className="flex flex-col items-center 2xl:flex-row 2xl:items-start justify-between space-x-8 flex-grow">
-          <Image
+          <PrettyImage
+            src={TurboImg}
+            alt="turbo code"
+            width={850}
+            height={1084}
+          />
+          {/* <Image
             className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink mb-8"
             src={TurboImg}
             width={850}
@@ -43,7 +49,7 @@ export default function Contact() {
             alt="turbo code"
             priority
             placeholder="blur"
-          />
+          /> */}
           <div className="shrink">
             <p className="font-medium text-xl mb-8">
               Turbo is a modern request library used for bypassing cybersecurity

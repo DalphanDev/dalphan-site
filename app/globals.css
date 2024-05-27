@@ -17,6 +17,7 @@
   }
 }
 
+html,
 body {
   font-family: "Biennale", sans-serif;
   color: rgb(var(--foreground-rgb));
