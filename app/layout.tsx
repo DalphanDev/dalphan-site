@@ -24,6 +24,15 @@ export const metadata: Metadata = {
   authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
   creator: "Dalphan | Thomas Allred",
   publisher: "Dalphan | Thomas Allred",
+  twitter: {
+    card: "summary_large_image",
+    title: "Dalphan | Thomas Allred",
+    description: "Hire Dalphan (Thomas Allred) for your next project.",
+    siteId: "4821638103",
+    creator: "@DalphanDev",
+    creatorId: "4821638103",
+    images: ["https://dalphan-site.vercel.app/logo.png"],
+  },
 };
 
 export default function RootLayout({
