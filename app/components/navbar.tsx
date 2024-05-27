@@ -14,6 +14,7 @@ export default function Header() {
           autoPlay
           muted
           className="rounded-full ml-8"
+          playsInline
         >
           <source src="/bounce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
