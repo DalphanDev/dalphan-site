@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  themeColor: "#050518",
+};
 
 export const metadata: Metadata = {
   title: "Homepage \u2014 Dalphan | Thomas Allred",
@@ -42,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#050518]">
       <body>
         {children}
         <Analytics />

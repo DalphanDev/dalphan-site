@@ -17,7 +17,10 @@
   }
 }
 
-html,
+html {
+  background-color: #050518;
+}
+
 body {
   font-family: "Biennale", sans-serif;
   color: rgb(var(--foreground-rgb));
