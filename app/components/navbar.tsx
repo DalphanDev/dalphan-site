@@ -13,25 +13,31 @@ export default function Header() {
           loop
           autoPlay
           muted
-          className="rounded-full ml-8"
+          className="rounded-full ml-4 md:ml-8"
           playsInline
         >
           <source src="/bounce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </Link>
-      <nav className="flex justify-center items-center w-full py-5">
-        <ul className="flex space-x-10">
+      <nav className="flex justify-center items-center flex-grow py-5">
+        <ul className="flex space-x-4 md:space-x-10 ">
           <Link href="/contact">
             <li className="hover:scale-110 transform transition">
-              <p className="font-bold text-2xl">Contact</p>
+              <p className="font-bold text-2xl">Contact Me</p>
+            </li>
+          </Link>
+          <div className="mx-4 w-px h-8 bg-gray-500"></div>
+          <Link href="/blog">
+            <li className="hover:scale-110 transform transition">
+              <p className="font-bold text-2xl">Blog</p>
             </li>
           </Link>
         </ul>
       </nav>
       <Link target="_blank" href="https://github.com/DalphanDev">
         <Image
-          className="top-2 invert mr-8 w-12 transform transition hover:scale-110 "
+          className="top-2 invert mr-4 md:mr-8 w-12 transform transition hover:scale-110 "
           src={GithubLogo}
           width={48}
           height={48}
