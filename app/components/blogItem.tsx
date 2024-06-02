@@ -39,7 +39,7 @@ export default function BlogItem({
     >
       <div className="flex">
         <Image
-          className="rounded-lg"
+          className="rounded-lg ml-4"
           src={imgSrc}
           width={200}
           height={200}
