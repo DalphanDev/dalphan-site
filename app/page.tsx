@@ -10,7 +10,7 @@ import PythonLogo from "../public/python.svg";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center">
+    <main className="relative flex min-h-screen flex-col items-center text-white">
       <Navbar />
       <div className="flex flex-col items-center 3xl:flex-row 3xl:items-start justify-between my-8 space-x-8 w-full px-8 max-w-[1920px]">
         <PrettyImage src={Figma} alt="Dalphan AIO" width={1200} height={675} />
