@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import PrettyImage from "@/app/components/prettyImage";
+import Image from "next/image";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
+import SKUImg from "../../../public/skuai.png";
 
 export const metadata: Metadata = {
-  title: "Dalphan AIO \u2014 Dalphan | Thomas Allred",
-  description: "Explore the Dalphan AIO project by Dalphan (Thomas Allred).",
+  title: "Turbo \u2014 Dalphan | Thomas Allred",
+  description: "Explore the Turbo project by Dalphan (Thomas Allred).",
   generator: "Next.js",
   applicationName: "Dalphan | Thomas Allred",
   referrer: "origin-when-cross-origin",
@@ -14,11 +17,11 @@ export const metadata: Metadata = {
     "Developer",
     "Freelance",
     "Hire",
-    "DalphanAIO",
-    "React",
-    "Node",
+    "Turbo",
     "Go",
     "Project",
+    "Anti-Bot",
+    "Cybersecurity",
   ],
   authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
   creator: "Dalphan | Thomas Allred",
@@ -29,49 +32,40 @@ export default function Contact() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
-      <div className="flex flex-col justify-between items-center my-8 space-y-8 w-full grow px-8">
-        <h2 className="font-medium text-4xl">Dalphan AIO</h2>
+      <div className="flex flex-col justify-between items-center my-8 space-y-8 w-full px-8">
+        <h2 className="font-medium text-4xl">SKU AI</h2>
         <div className="flex flex-col items-center 2xl:flex-row 2xl:items-start justify-between space-x-8 flex-grow">
-          <iframe
-            className="flex-grow mb-8 sm:w-full 2xl:w-1/2 h-80"
-            src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7152803180223819776?compact=1"
-            // height="500"
-            // width="1200"
-            frameBorder="0"
-            allowFullScreen
-            title="Embedded post"
-          ></iframe>
-          <div className="flex-shrink">
+          <PrettyImage
+            src={SKUImg}
+            alt="SKU Predictions"
+            width={850}
+            height={1084}
+          />
+          <div className="shrink">
             <p className="font-medium text-xl mb-8">
-              Dalphan AIO is a bot software designed to streamline and optimize
-              online purchases by automating the buying process across multiple
-              platforms. Leveraging multiple programming languages, DalphanAIO
-              was created to exceed modern industry standards.
+              SKU AI is a machine learning project that uses image recognition
+              to identify and categorize shoes based on their images. The
+              project uses a convolutional neural network to analyze the images
+              and categorize them into different shoe types.
             </p>
             <ul className="list-disc list-inside space-y-8 font-small text-lg mb-8">
               <li>
-                Engineered a full-stack solution integrating both front-end and
-                back-end components using React.js, Node.js, and Go, reducing
-                average checkout time by 75%.
+                Trained and optimized image classification models utilizing
+                Python and TensorFlow, achieving an average accuracy rate of
+                85%.
               </li>
               <li>
-                Implemented advanced algorithms that increased the checkout
-                success rate to 80% during limited-edition releases.
+                Architected and deployed a robust API utilizing Node.js and
+                Express, efficiently processing over 10,000 daily predictions
+                with a 99.99% uptime.
               </li>
               <li>
-                Optimized the system architecture to support scaling from 10 to
-                1,000 concurrent tasks without degradation in performance.
-              </li>
-              <li>
-                Developed and integrated various APIs to enable seamless
-                interactions between DalphanAIO and online retail platforms,
-                ensuring compatibility and functionality.
+                Developed and implemented a notification system using Node.js to
+                alert customers of profitable leads, significantly increasing
+                user profits by several thousand dollars.
               </li>
             </ul>
-            <Link
-              href="https://github.com/DalphanDev/shoe-img-recog"
-              target="_blank"
-            >
+            <Link href="https://github.com/DalphanDev/sku-ai" target="_blank">
               <button className="bg-[#0146a6] rounded-md w-40 py-4 shadow-lg shadow-[#0146a6]/50 transform transition hover:scale-110 outline outline-2 outline-sky-400">
                 View Repository
               </button>

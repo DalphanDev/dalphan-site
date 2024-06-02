@@ -41,15 +41,6 @@ export default function Contact() {
             width={850}
             height={1084}
           />
-          {/* <Image
-            className="shadow-2xl shadow-[#06c6dd]/50 rounded-md flex-shrink mb-8"
-            src={TurboImg}
-            width={850}
-            height={1084}
-            alt="turbo code"
-            priority
-            placeholder="blur"
-          /> */}
           <div className="shrink">
             <p className="font-medium text-xl mb-8">
               Turbo is a modern request library used for bypassing cybersecurity
