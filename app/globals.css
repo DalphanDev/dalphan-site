@@ -3,20 +3,6 @@
 @tailwind utilities;
 @import "./fonts.css";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 html {
   background-color: #050518;
   color: white;
@@ -24,7 +10,7 @@ html {
 
 body {
   font-family: "Biennale", sans-serif;
-  color: rgb(var(--foreground-rgb));
+  color: white;
   background: linear-gradient(
     89.98deg,
     rgb(2, 2, 12) -2.94%,
