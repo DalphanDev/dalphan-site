@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import PrettyImage from "@/app/components/prettyImage";
-import Image from "next/image";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
 import SKUImg from "../../../public/skuai.png";
 
 export const metadata: Metadata = {
-  title: "Turbo \u2014 Dalphan | Thomas Allred",
-  description: "Explore the Turbo project by Dalphan (Thomas Allred).",
+  title: "SKU AI \u2014 Dalphan | Thomas Allred",
+  description: "Explore the SKU AI project by Dalphan (Thomas Allred).",
   generator: "Next.js",
   applicationName: "Dalphan | Thomas Allred",
   referrer: "origin-when-cross-origin",
@@ -17,11 +16,11 @@ export const metadata: Metadata = {
     "Developer",
     "Freelance",
     "Hire",
-    "Turbo",
-    "Go",
+    "AI",
+    "Python",
     "Project",
-    "Anti-Bot",
-    "Cybersecurity",
+    "Image Recognition",
+    "TensorFlow",
   ],
   authors: [{ name: "Thomas Allred" }, { name: "Dalphan" }],
   creator: "Dalphan | Thomas Allred",

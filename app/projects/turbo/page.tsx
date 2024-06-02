@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PrettyImage from "@/app/components/prettyImage";
-import Image from "next/image";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
 import TurboImg from "../../../public/turbo.png";
