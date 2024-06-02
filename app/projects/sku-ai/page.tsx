@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   publisher: "Dalphan | Thomas Allred",
 };
 
-export default function Contact() {
+export default function SKUAIProject() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
