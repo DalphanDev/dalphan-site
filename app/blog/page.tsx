@@ -38,7 +38,7 @@ export default function BlogPage() {
   return (
     <main className="relative flex min-h-screen flex-col items-center">
       <Navbar />
-      <div className="flex flex-col grow items-center  px-8 my-4 space-y-4">
+      <div className="flex flex-col grow items-center px-8 my-4 space-y-4">
         <BlogItem
           href="/blog/turbo"
           imgSrc={TurboSnail}
@@ -61,8 +61,8 @@ export default function BlogPage() {
           title="Reverse Engineering Akamai"
           description="Describing the steps taken to de-obfuscate and reverse engineer Akamai's security measures."
           direction="left"
-          customWidth={240}
-          customHeight={270}
+          customWidth={130}
+          customHeight={130}
         />
         <BlogItem
           href="/blog/sku-ai"

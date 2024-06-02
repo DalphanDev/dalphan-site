@@ -35,17 +35,17 @@ export default function BlogItem({
   }, []);
 
   let contents = (
-    <div className="flex p-4 min-h-[150px]">
+    <div className="flex p-4 min-h-[150px] ">
       <Image
         className="rounded-lg mr-4"
         src={imgSrc}
-        width={customHeight || 160}
+        width={customWidth || 160}
         height={customHeight || 160}
         alt={title}
       />
       <div className="flex flex-col grow ml-4 space-y-4">
-        <h2 className="text-5xl">{title}</h2>
-        <p className="text-2xl">{description}</p>
+        <h2 className="text-2xl sm:text-3xl md:text-5xl">{title}</h2>
+        <p className="text-lg sm:text-xl md:text-2xl">{description}</p>
       </div>
     </div>
   );
@@ -54,13 +54,13 @@ export default function BlogItem({
     contents = (
       <div className="flex p-4 min-h-[150px]">
         <div className="flex flex-col grow mr-4 space-y-4">
-          <h2 className="text-5xl">{title}</h2>
-          <p className="text-2xl">{description}</p>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl">{title}</h2>
+          <p className="text-lg sm:text-xl md:text-2xl">{description}</p>
         </div>
         <Image
           className="rounded-lg m-4"
           src={imgSrc}
-          width={customHeight || 160}
+          width={customWidth || 160}
           height={customHeight || 160}
           alt={title}
         />
