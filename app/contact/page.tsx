@@ -40,16 +40,6 @@ export default function Contact() {
         <div className="flex flex-col justify-start items-start space-y-16 w-full grow mb-8 mr-8">
           <h1 className="font-bold text-5xl">Contact Me</h1>
           <h2 className="font-medium text-3xl">Email: tjallred02@gmail.com</h2>
-          <h2 className="font-medium text-3xl">Phone: 954-268-4555</h2>
-          <h2 className="font-medium text-3xl">
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/thomas-allred-dev/"
-              className=" text-blue-400"
-            >
-              LinkedIn
-            </Link>
-          </h2>
           <h2 className="font-medium text-3xl">
             <Link
               target="_blank"
